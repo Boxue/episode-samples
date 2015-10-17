@@ -53,13 +53,16 @@ let NAME = VALUE
 */
 
 let minutes = 30
-let fireIshot = true
+let fireIsHot = true
 
-//fireIshot = false
+//fireIsHot = false
 
 // Type inference
 
-var x: String
+var x: Int
+var s: String
+
+// Type annotation
 
 //print(x)
 
