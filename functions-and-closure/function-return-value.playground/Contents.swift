@@ -6,7 +6,8 @@ import UIKit
 
 //: #### Return value
 
-func multipleOf(multiplier: Int, _ andValue: Int) -> Int {
+func multipleOf(multiplier: Int,
+                _ andValue: Int) -> Int {
     return multiplier * andValue
 }
 
