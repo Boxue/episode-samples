@@ -42,7 +42,7 @@ inRange(300, y: 800)
 struct Location {
     var x = 100.0
     var y = 100.0
-
+    
     // Initializer
     init() {}
     
@@ -98,7 +98,7 @@ pointA.moveHorizental(100.0)
 
 extension Location {
     mutating func moveVertical(dist: Double) {
-        self.y += y
+        self.y += dist
     }
 }
 
