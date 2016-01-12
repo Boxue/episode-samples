@@ -12,7 +12,7 @@ class HTMLElment {
         // Capture list
         [unowned self] () -> String in
         if let text = self.text {
-            return "<\(self.name)>text</\(self.name)>"
+            return "<\(self.name)>\(self.text)</\(self.name)>"
         }
         else {
             return "<\(self.name)>"
