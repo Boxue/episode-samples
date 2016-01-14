@@ -39,7 +39,7 @@ p4.x = 10
 p1.x
 let p2 = PointRef(x: 0, y: 0)
 var p5 = p2
-p2 = p5
+
 p2.x = 10
 p5.x
 let p3 = PointRef(x: 0, y: 0)
