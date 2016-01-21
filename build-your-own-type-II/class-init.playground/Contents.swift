@@ -8,9 +8,9 @@ class Point2D {
     
     // Designated Initializer or memberwise initializer
     init?(x: Double, y: Double) {
-        if x < 0 || y < 0 {
-            return nil
-        }
+//        if x < 0 || y < 0 {
+//            return nil
+//        }
         self.x = x
         self.y = y
         
