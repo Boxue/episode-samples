@@ -36,10 +36,10 @@ class Point3D : Point2D {
     
     init(x: Double, y: Double, z: Double) {
         self.z = z
+        super.init(x: x, y: y)
         round(self.x)
         round(self.y)
         round(self.z)
-        super.init(x: x, y: y)
     }
     
     override init(x: Double, y: Double) {
