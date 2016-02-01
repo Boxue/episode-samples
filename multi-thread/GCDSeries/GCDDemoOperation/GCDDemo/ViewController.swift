@@ -46,8 +46,8 @@ class ViewController: UIViewController {
     @IBAction func cancelDownload(sender: AnyObject) {
         self.queue.cancelAllOperations()
     }
+    
     @IBAction func downloadImages(sender: UIButton) {
-        
         queue.addOperationWithBlock({
             let img1 = Downloader.downloadImageWithURL(self.imageUrls[0])
             
@@ -65,10 +65,7 @@ class ViewController: UIViewController {
                 self.image2.clipsToBounds = true
             })
         })
-        
         op2.completionBlock = { print("image2 downloaded") }
-        
-//        queue.addOperation(op2)
         
         let op3 = NSBlockOperation(block: {
             let img3 = Downloader.downloadImageWithURL(self.imageUrls[2])
@@ -78,10 +75,7 @@ class ViewController: UIViewController {
                 self.image3.clipsToBounds = true
             })
         })
-        
-        op3.completionBlock = { print("image3 is cancelled: \(op3.cancelled)") }
-        
-//        queue.addOperation(op3)
+        op3.completionBlock = { print("image3 downloaded") }
         
         let op4 = NSBlockOperation(block: {
             let img4 = Downloader.downloadImageWithURL(self.imageUrls[3])
@@ -91,38 +85,13 @@ class ViewController: UIViewController {
                 self.image4.clipsToBounds = true
             })
         })
-        
         op4.completionBlock = { print("image4 downloaded") }
-        
-        queue.addOperation(op4)
         
         op3.addDependency(op4)
         op2.addDependency(op3)
         
+        queue.addOperation(op4)
         queue.addOperation(op3)
         queue.addOperation(op2)
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
