@@ -66,10 +66,19 @@
                                     <action selector="clearDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xwj-iN-aYY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vx-Xv-CxT">
+                                <rect key="frame" x="205" y="512" width="39" height="30"/>
+                                <state key="normal" title="Cacel"/>
+                                <connections>
+                                    <action selector="cancelDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C0f-Lk-63S"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ejZ-DO-f8K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="1wg-Lh-JRx"/>
+                            <constraint firstItem="4fJ-Ln-1PS" firstAttribute="leading" secondItem="9Vx-Xv-CxT" secondAttribute="trailing" constant="22" id="4M9-Ii-bNB"/>
+                            <constraint firstItem="htR-QB-Z0o" firstAttribute="top" secondItem="9Vx-Xv-CxT" secondAttribute="bottom" constant="8" id="9gf-0b-H25"/>
                             <constraint firstItem="ejZ-DO-f8K" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="GYb-xm-lPN"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="htR-QB-Z0o" secondAttribute="bottom" constant="20" id="Mec-aD-DpD"/>
                             <constraint firstItem="4fJ-Ln-1PS" firstAttribute="top" secondItem="L2X-4V-4FD" secondAttribute="bottom" constant="-30" id="PRZ-mI-E02"/>
