@@ -56,22 +56,3 @@ if p2 === p3  {
 if p2 !== p3  {
     print("They are not the same object")
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
