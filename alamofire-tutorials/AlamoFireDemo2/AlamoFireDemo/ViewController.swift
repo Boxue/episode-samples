@@ -14,32 +14,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-//        Alamofire.request(.GET, "https://apidemo.boxue.io/alamofire?XDEBUG_SESSION_START=PHPSTORM")
-//            .responseJSON(completionHandler: { response in
-//                switch response.result {
-//                case .Success(let json):
-//                    print("JSON: ================")
-//                case .Failure(let error):
-//                    print("\(error)")
-//                }
-//            })
-//        
-        let parameters = [
-            "foo": [1,2,3],
-            "bar": [
-                "baz": "qux"
-            ]
-        ]
+        let requestUrl = "https://apidemo.boxue.io/alamofire?XDEBUG_SESSION_START=PHPSTORM"
         
-        Alamofire.request(.POST, "https://apidemo.boxue.io/alamofire?XDEBUG_SESSION_START=PHPSTORM", parameters: parameters, encoding: .JSON)
-                    .responseJSON(completionHandler: { response in
-                        switch response.result {
-                        case .Success(let json):
-                            print("JSON: ================")
-                        case .Failure(let error):
-                            print("\(error)")
-                        }
-                    })
+        Alamofire.request(.GET, requestUrl)
+            .responseJSON(completionHandler: { response in
+                switch response.result {
+                case .Success(let json):
+                    print("JSON: ================")
+                    print("\(json)")
+                case .Failure(let error):
+                    print("\(error)")
+                }
+            })
+
 
     }
 
