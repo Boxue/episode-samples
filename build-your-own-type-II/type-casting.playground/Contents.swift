@@ -64,23 +64,3 @@ box[0] is Shape
 (box[3] as? Shape).dynamicType
 (box[3] as! Shape).dynamicType
 //(box[2] as! Shape).dynamicType
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

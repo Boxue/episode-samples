@@ -24,6 +24,8 @@ class AboutUsViewController: UIViewController {
                 self.aboutUs.loadData(htmlData, MIMEType: "text/html", textEncodingName: "UTF-8", baseURL: mainBundleUrl)
             }
         }
+        
+        self.view.setNeedsDisplay()
     }
 
     override func didReceiveMemoryWarning() {
