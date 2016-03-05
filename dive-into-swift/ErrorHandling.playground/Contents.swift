@@ -12,7 +12,7 @@ enum Command {
     case Lifting(Double)
     case Shutdown
 }
-
+UITableViewController
 class Robot {
     var power = 1.0
     let maxLifting = 100.0 // Kg
