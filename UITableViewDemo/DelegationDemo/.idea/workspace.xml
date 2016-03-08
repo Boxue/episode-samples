@@ -24,8 +24,8 @@
       <file leaf-file-name="main.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DelegationDemo/main.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="972">
-              <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+            <state relative-caret-position="1080">
+              <caret line="64" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -164,6 +164,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DelegationDemo/main.swift">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DelegationDemo/main.swift">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
           <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
           <folding />
@@ -172,8 +180,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DelegationDemo/main.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+        <state relative-caret-position="1080">
+          <caret line="64" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
         </state>
       </provider>
