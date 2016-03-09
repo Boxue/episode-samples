@@ -12,7 +12,7 @@ enum Command {
     case Lifting(Double)
     case Shutdown
 }
-UITableViewController
+
 class Robot {
     var power = 1.0
     let maxLifting = 100.0 // Kg
@@ -37,16 +37,14 @@ class Robot {
     }
 }
 
-let iRobot = Robot()
-
-func working(robot: Robot) throws {
+func working(robot: Robot) throws -> Int {
     defer {
-        try! iRobot.action(Command.Shutdown)
+        try! robot.action(Command.Shutdown)
     }
     
     do {
         try robot.action(Command.PowerUp)
-        try robot.action(Command.Lifting(52))
+        try robot.action(Command.Lifting(152))
     }
     catch let RobotError.LowPower(percentage) {
         print("Low power: \(percentage)")
@@ -54,6 +52,9 @@ func working(robot: Robot) throws {
     catch let RobotError.Overload(maxWeight) {
         print("Overloading, max \(maxWeight) KG is allowd")
     }
+    
+    return 0
 }
 
-try? working(iRobot)
+let iRobot = Robot()
+let a = try? working(iRobot)
