@@ -46,39 +46,3 @@ func =><T, U>(opt: T?, f: T -> U?) -> U? {
 nilPerson=>{ $0.card }=>{ $0.type }
 noCardPerson=>{ $0.card }=>{ $0.type }
 creditCardPerson=>{ $0.card }=>{ $0.type }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
