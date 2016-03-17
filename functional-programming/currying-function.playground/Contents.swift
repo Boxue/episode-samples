@@ -38,20 +38,3 @@ func curryingAddNumbers(one: Int)(two: Int)(three: Int) -> Int {
 let bindOne = curryingAddNumbers(1)
 let bindTwo = bindOne(two: 2)
 let addThree = bindTwo(three: 3)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
