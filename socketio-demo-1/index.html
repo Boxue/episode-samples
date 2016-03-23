@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Socket.io demo</title>
+	<style>
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		body { font: 18px Fira_Code, Helvetica, Arial; }
+		form { background: #999; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+		form input { border: 0; padding: 10px; width: 85%; margin-right: .5%; }
+		form button { width: 9%; font-size: 16px; background: #72c02c; color: white; border: none; padding: 10px; }
+
+		#MessageList { list-style-type: none; margin: 0; padding: 0; }
+		#MessageList li { padding: 5px 10px; }
+		#MessageList li:nth-child(even) { background: #72c02c; }
+	</style>
+</head>
+<body>
+	<h2>Hello world</h2>	
+
+	<ul id="MessageList">
+		<li v-for = "message in messages">{{ message }}</li>
+	</ul>	
+
+
+	<form v-on:submit.prevent="send">
+		<input type="text" v-model="message">	
+		<button type="submit">Send</button>
+	</form>
+
+	<!-- 1. Import socket.io client script -->
+	<script src="http://cdn.bootcss.com/socket.io/1.4.5/socket.io.min.js"></script>
+	<script src="http://cdn.bootcss.com/vue/1.0.17/vue.js"></script>
+
+	<script>
+		// 2. Create a socket.io object
+		var socket = io();
+
+		new Vue({
+			el: 'body',
+			data: {
+				message: '',
+				messages: []
+			},
+			ready: function() {
+				socket.on('chat.message', function(message) {
+					this.messages.push(message);
+				}.bind(this));	
+			},
+			methods: {
+				send: function(e) {
+					// alert(this.message);
+					socket.emit('chat.message', this.message);
+					this.message = '';
+				}
+			}
+		});
+	</script>
+</body>
+</html>
