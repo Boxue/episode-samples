@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0f847da-85cc-4d10-8bdd-81416ed67daf" name="Default" comment="" />
-    <ignored path="ResultErrorHandling.iws" />
+    <list default="true" id="ffe4ae38-7e33-4a71-bfaf-43084b7e2af8" name="Default" comment="" />
+    <ignored path="AlamoFireURLEncoding.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/AlamoFireDemo-hjwuolkctvtrzsaiwgcbatscynlj/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,17 +16,17 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="macos_x86_64" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulatoriPhone_5s_9.2_x86_64_1" />
   <component name="FavoritesManager">
-    <favorites_list name="ResultErrorHandling" />
+    <favorites_list name="AlamoFireDemo" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.swift" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ResultErrorHandling/main.swift">
+      <file leaf-file-name="ViewController.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AlamoFireDemo/ViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="111" column="20" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
+            <state relative-caret-position="891">
+              <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -36,7 +37,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ResultErrorHandling/main.swift" />
+        <option value="$PROJECT_DIR$/AlamoFireDemo/ViewController.swift" />
       </list>
     </option>
   </component>
@@ -46,8 +47,28 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1916" />
-    <option name="height" value="1080" />
+    <option name="x" value="953" />
+    <option name="width" value="2049" />
+    <option name="height" value="1669" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>C/C++</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -76,52 +97,90 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="XcodeSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Swift" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
-  <component name="RunManager" selected="Application.ResultErrorHandling">
-    <configuration default="false" name="ResultErrorHandling" type="AppleRunConfiguration" factoryName="Application" temporary="true" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ResultErrorHandling" TARGET_NAME="ResultErrorHandling" CONFIG_NAME="Debug" SCHEME_NAME="ResultErrorHandling" RUN_TARGET_PROJECT_NAME="ResultErrorHandling" RUN_TARGET_NAME="ResultErrorHandling" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+  <component name="RunManager" selected="Application.AlamoFireDemo">
+    <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AlamoFireDemo" TARGET_NAME="AlamoFireDemo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AlamoFireDemo" RUN_TARGET_NAME="AlamoFireDemo" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
       <method />
     </configuration>
-    <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ResultErrorHandling" TARGET_NAME="ResultErrorHandling" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ResultErrorHandling" RUN_TARGET_NAME="ResultErrorHandling" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="OCGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AlamoFireDemo" TARGET_NAME="AlamoFireDemo" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="AlamoFireDemo" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AlamoFireDemo" TARGET_NAME="AlamoFireDemo" CONFIG_NAME="Debug" SCHEME_NAME="AlamoFireDemo" RUN_TARGET_PROJECT_NAME="AlamoFireDemo" RUN_TARGET_NAME="AlamoFireDemo" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.ResultErrorHandling" />
+    <configuration default="false" name="Alamofire" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Alamofire" CONFIG_NAME="Debug" SCHEME_NAME="Alamofire" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <configuration default="false" name="Pods-AlamoFireDemo" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods-AlamoFireDemo" CONFIG_NAME="Debug" SCHEME_NAME="Pods-AlamoFireDemo" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Application.AlamoFireDemo" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Alamofire" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Pods-AlamoFireDemo" />
     </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.ResultErrorHandling" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f0f847da-85cc-4d10-8bdd-81416ed67daf" name="Default" comment="" />
-      <created>1457689127543</created>
+      <changelist id="ffe4ae38-7e33-4a71-bfaf-43084b7e2af8" name="Default" comment="" />
+      <created>1456730111687</created>
       <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1457689127543</updated>
+      <updated>1456730111687</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1916" height="1080" extended-state="6" />
+    <frame x="953" y="0" width="2049" height="1669" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24966711" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -130,15 +189,15 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328476" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19247116" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4055859" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -162,50 +221,57 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ResultErrorHandling/main.swift">
+    <entry file="file://$PROJECT_DIR$/AlamoFireDemo/ViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3816">
-          <caret line="106" column="39" selection-start-line="106" selection-start-column="39" selection-end-line="106" selection-end-column="39" />
+        <state relative-caret-position="1692">
+          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ResultErrorHandling/main.swift">
+    <entry file="file://$PROJECT_DIR$/AlamoFireDemo/ViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4104">
-          <caret line="114" column="56" selection-start-line="114" selection-start-column="56" selection-end-line="114" selection-end-column="56" />
+        <state relative-caret-position="108">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ResultErrorHandling/main.swift">
+    <entry file="file://$PROJECT_DIR$/AlamoFireDemo/ViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4176">
-          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+        <state relative-caret-position="108">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ResultErrorHandling/main.swift">
+    <entry file="file://$PROJECT_DIR$/AlamoFireDemo/ViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4176">
-          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+        <state relative-caret-position="864">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ResultErrorHandling/main.swift">
+    <entry file="file://$PROJECT_DIR$/AlamoFireDemo/ViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="792">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ResultErrorHandling/main.swift">
+    <entry file="file://$PROJECT_DIR$/Pods/Alamofire/Source/ParameterEncoding.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="111" column="20" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
+        <state relative-caret-position="377">
+          <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AlamoFireDemo/ViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
           <folding />
         </state>
       </provider>
