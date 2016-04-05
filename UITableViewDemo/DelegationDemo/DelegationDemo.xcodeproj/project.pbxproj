@@ -88,6 +88,8 @@
 		994BF4D75B983973FC74839B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
 				ORGANIZATIONNAME = Boxue;
 			};
 			buildConfigurationList = 994BF58B1FF2BE6915166F7C /* Build configuration list for PBXProject "DelegationDemo" */;
@@ -232,6 +234,7 @@
 				994BF71FE0A6134EED4DBB2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

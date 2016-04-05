@@ -44,11 +44,11 @@ class ListTable {
 }
 
 class ListCell {
-    func draw() { print("I'm a list cell") }
+    func draw() { print("I'm a list cell", terminator: "") }
 }
 
 class CustomListCell: ListCell {
-    override func draw() { print("I'm a custom list cell") }
+    override func draw() { print("I'm a custom list cell", terminator: "") }
 }
 
 class ListTableController: ListTableDataSource, ListTableDelegate {
@@ -85,7 +85,7 @@ class ListTableController: ListTableDataSource, ListTableDelegate {
         // Get the selected row
         let cell = self.cellForRowAtIndex(listTable, index: index)
         // Print a prompt message
-        print("\(cell.dynamicType) \(index) is selected")
+        print("\(cell.dynamicType) \(index) is selected", terminator: "")
     }
 }
 
