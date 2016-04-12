@@ -9,7 +9,7 @@ import UIKit
 
 //: for 
 
-for var i = 0; i < 10; i++ {
+for var i = 0; i < 10; i += 1 {
     print(i)
 }
 
@@ -33,7 +33,7 @@ for _ in 1...10 {
 var i  = 0
 while i < 10 {
     print(i)
-    ++i
+    i += 1
 }
 
 // do ... while
@@ -41,7 +41,7 @@ var n  = 0
 
 repeat {
     print(vowel[n])
-    ++n
+    n += 1
 } while n < 5
 
 //: if
@@ -57,5 +57,3 @@ else if PI == 3.1415926 {
 else {
 
 }
-
-var person: String?
