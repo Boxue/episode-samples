@@ -23,7 +23,6 @@ let possibleNumber = "123"
 var convertResult = Int(possibleNumber)
 
 print(convertResult)
-
 convertResult.dynamicType
 
 var x: Int?
@@ -52,7 +51,7 @@ if convertResult != nil {
 
 if var number = convertResult {
     let sum = number + 1
-    number++
+    number += 1
     print(number)
     print(convertResult)
 }
