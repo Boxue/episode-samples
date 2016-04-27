@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlamoFireDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the resource url here" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="oPF-kj-RcD">
+                                <rect key="frame" x="20" y="74" width="560" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="GEn-HP-djG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL"/>
+                                <connections>
+                                    <action selector="valueChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="UUr-oh-jK6"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Download URL:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsR-Mj-LzW">
+                                <rect key="frame" x="20" y="45" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="rzv-Wj-4bO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QlA-GP-sT7">
+                                <rect key="frame" x="20" y="135" width="560" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="Qhs-0R-ZBx"/>
+                                </constraints>
+                            </progressView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="G4H-h2-VRf" userLabel="Button stack">
+                                <rect key="frame" x="20" y="187" width="560" height="118"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCP-bQ-htw">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Begin"/>
+                                        <connections>
+                                            <action selector="beginDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J9N-kk-dpb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgU-LS-bLf">
+                                        <rect key="frame" x="0.0" y="42" width="560" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Suspend"/>
+                                        <connections>
+                                            <action selector="suspendOrResumeDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gfg-ki-saF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLS-s9-cJj">
+                                        <rect key="frame" x="0.0" y="84" width="560" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LuA-6V-YgT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="118" id="eu2-Er-WMq"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oPF-kj-RcD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="1cD-rK-vLa"/>
+                            <constraint firstItem="G4H-h2-VRf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="26P-qN-j7D"/>
+                            <constraint firstItem="tsR-Mj-LzW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="50s-yA-IXO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tsR-Mj-LzW" secondAttribute="trailing" id="C2W-DG-wsx"/>
+                            <constraint firstItem="oPF-kj-RcD" firstAttribute="top" secondItem="tsR-Mj-LzW" secondAttribute="bottom" constant="8" id="DwM-cI-lhk"/>
+                            <constraint firstItem="QlA-GP-sT7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Pzq-XR-mgz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="G4H-h2-VRf" secondAttribute="trailing" id="X5A-tb-ZRN"/>
+                            <constraint firstItem="tsR-Mj-LzW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jmY-Sm-v3N"/>
+                            <constraint firstItem="G4H-h2-VRf" firstAttribute="top" secondItem="QlA-GP-sT7" secondAttribute="bottom" constant="50" id="mBD-9Z-irR"/>
+                            <constraint firstItem="oPF-kj-RcD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mSC-XR-SJf"/>
+                            <constraint firstItem="QlA-GP-sT7" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="oqc-KO-HCU"/>
+                            <constraint firstItem="QlA-GP-sT7" firstAttribute="top" secondItem="oPF-kj-RcD" secondAttribute="bottom" constant="25" id="qno-wX-YuY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beginBtn" destination="eCP-bQ-htw" id="Jlf-gc-8zQ"/>
+                        <outlet property="cancelBtn" destination="lLS-s9-cJj" id="S2M-Io-FAN"/>
+                        <outlet property="downloadProgress" destination="QlA-GP-sT7" id="zIM-Jf-0Dd"/>
+                        <outlet property="downloadUrl" destination="oPF-kj-RcD" id="A8T-Ia-3md"/>
+                        <outlet property="suspendOrResumeBtn" destination="RgU-LS-bLf" id="1SG-et-VqB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="701" y="416"/>
+        </scene>
+    </scenes>
+</document>
