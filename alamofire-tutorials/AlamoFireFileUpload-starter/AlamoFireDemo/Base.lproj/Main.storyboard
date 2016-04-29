@@ -45,7 +45,7 @@
                                 </constraints>
                             </progressView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="G4H-h2-VRf" userLabel="Button stack">
-                                <rect key="frame" x="20" y="187" width="560" height="118"/>
+                                <rect key="frame" x="20" y="187" width="560" height="156"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCP-bQ-htw">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="34"/>
@@ -71,9 +71,16 @@
                                             <action selector="cancelDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LuA-6V-YgT"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLx-DQ-qDg">
+                                        <rect key="frame" x="0.0" y="126" width="560" height="30"/>
+                                        <state key="normal" title="Upload"/>
+                                        <connections>
+                                            <action selector="uploadFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1qO-io-iQa"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="118" id="eu2-Er-WMq"/>
+                                    <constraint firstAttribute="height" constant="156" id="jUG-1s-1X5"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -99,6 +106,7 @@
                         <outlet property="downloadProgress" destination="QlA-GP-sT7" id="zIM-Jf-0Dd"/>
                         <outlet property="downloadUrl" destination="oPF-kj-RcD" id="A8T-Ia-3md"/>
                         <outlet property="suspendOrResumeBtn" destination="RgU-LS-bLf" id="1SG-et-VqB"/>
+                        <outlet property="uploadBtn" destination="hLx-DQ-qDg" id="ywa-ZL-lni"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var beginBtn: UIButton!
     @IBOutlet weak var suspendOrResumeBtn: UIButton!
     @IBOutlet weak var cancelBtn: UIButton!
+    @IBOutlet weak var uploadBtn: UIButton!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -281,5 +282,8 @@ extension ViewController {
         default:
             break
         }
+    }
+    
+    @IBAction func uploadFile(sender: AnyObject) {
     }
 }
