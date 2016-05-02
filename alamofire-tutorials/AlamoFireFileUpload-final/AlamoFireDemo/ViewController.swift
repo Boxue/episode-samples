@@ -297,5 +297,72 @@ extension ViewController {
         print("Uploading \(self.episodeUrl!)")
         
         // TODO: add uploading code here
+        Alamofire.upload(
+            .POST,
+            "https://apidemo.boxue.io/alamofire",
+            multipartFormData: { multipartFormData in
+                multipartFormData.appendBodyPart(
+                    fileURL: self.episodeUrl!,
+                    name: "episode-demo"
+                )
+            },
+            encodingCompletion: { encodingResult in
+                switch encodingResult {
+                case .Success(let request, _, _):
+                    request.progress { byteWritten, totalBytesWritten, totalBytesExpectedToWrite in
+                        dispatch_async(dispatch_get_main_queue()) {
+                            let progress = Float(totalBytesWritten) / Float(totalBytesExpectedToWrite)
+                            
+                            self.downloadProgress.progress = progress
+                        }
+                    }
+                    .responseJSON { response in
+                        debugPrint(response)
+                    }
+                case .Failure(let encodingError):
+                    print(encodingError)
+                }
+            }
+        )
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
