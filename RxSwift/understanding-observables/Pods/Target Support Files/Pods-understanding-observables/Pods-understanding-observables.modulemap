@@ -1,0 +1,6 @@
+framework module Pods_understanding_observables {
+  umbrella header "Pods-understanding-observables-umbrella.h"
+
+  export *
+  module * { export * }
+}
