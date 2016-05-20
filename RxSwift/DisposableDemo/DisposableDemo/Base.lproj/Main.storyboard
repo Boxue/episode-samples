@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DisposableDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZYO-DU-sjv">
+                                <rect key="frame" x="252" y="105" width="97" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="Cju-pR-1UM"/>
+                                    <constraint firstAttribute="width" constant="97" id="OBG-6i-hBZ"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="66"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nnl-c4-R97">
+                                <rect key="frame" x="249" y="248" width="103" height="30"/>
+                                <state key="normal" title="Stop sequence"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nnl-c4-R97" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1TV-md-2Xs"/>
+                            <constraint firstItem="Nnl-c4-R97" firstAttribute="top" secondItem="ZYO-DU-sjv" secondAttribute="bottom" constant="76" id="P1P-CJ-l8e"/>
+                            <constraint firstItem="ZYO-DU-sjv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="85" id="VHX-Gb-Paq"/>
+                            <constraint firstItem="ZYO-DU-sjv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o5u-cm-IdK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="counter" destination="ZYO-DU-sjv" id="jci-eO-lrA"/>
+                        <outlet property="disposeCounter" destination="Nnl-c4-R97" id="RlQ-jT-HaF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="479"/>
+        </scene>
+    </scenes>
+</document>
