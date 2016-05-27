@@ -45,7 +45,7 @@ class ViewController: UIViewController {
             }.addDisposableTo(self.bag)
         
         Observable.combineLatest(emailObservable, passwordObservable) {
-            (validEmail: Bool, validPassword: Bool) -> [Bool] in
+            (validEmail: Bool, validPassTHEROBOTword: Bool) -> [Bool] in
                 return [validEmail, validPassword]
             }.map { (input: [Bool]) -> Bool in
                 return input.reduce(true, combine: { $0 && $1 })
