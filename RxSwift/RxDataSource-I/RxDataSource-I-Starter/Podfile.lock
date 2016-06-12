@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (3.4.0)
+  - RxCocoa (2.5.0):
+    - RxSwift (~> 2.5)
+  - RxDataSources (0.8.1):
+    - RxCocoa (~> 2.2)
+    - RxSwift (~> 2.2)
+  - RxSwift (2.5.0)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.4)
+  - RxCocoa (~> 2.0)
+  - RxDataSources (~> 0.7)
+  - RxSwift (~> 2.0)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 2a5b70f06001316d4fb54501edc70b4084705da0
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  RxCocoa: e1b1562e57a554d0fb2aabf9d71b637f177257c7
+  RxDataSources: 4a87345847d66ef84ecc10bdfa189190f3cd6b12
+  RxSwift: 402b41a50e922a0368fc14cb3bc9f4427920e8ae
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: 18c86638acb8fa67e4a5c4c18dcb7f547b385092
+
+COCOAPODS: 1.0.0

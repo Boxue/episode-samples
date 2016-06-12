@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EE0DB2F0F200A3147EFD933ED66300F5C6856393",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EE0DB2F0F200A3147EFD933ED66300F5C6856393" : 0,
+    "E82BB69003238A4DA3D94D9EE9C01CF4A2D7CB90" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "432A98BF-CD5D-47C4-B91C-079EEC3E703A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EE0DB2F0F200A3147EFD933ED66300F5C6856393" : "episode-samples\/",
+    "E82BB69003238A4DA3D94D9EE9C01CF4A2D7CB90" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RxNetworkDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RxSwift\/RxDataSource-II\/RxDataSource-II-Finish\/RxNetworkDemo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Boxue\/doraemon.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E82BB69003238A4DA3D94D9EE9C01CF4A2D7CB90"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Boxue\/episode-samples.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EE0DB2F0F200A3147EFD933ED66300F5C6856393"
+    }
+  ]
+}

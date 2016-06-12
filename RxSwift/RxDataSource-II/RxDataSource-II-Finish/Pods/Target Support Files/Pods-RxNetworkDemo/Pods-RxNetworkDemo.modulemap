@@ -1,0 +1,6 @@
+framework module Pods_RxNetworkDemo {
+  umbrella header "Pods-RxNetworkDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
