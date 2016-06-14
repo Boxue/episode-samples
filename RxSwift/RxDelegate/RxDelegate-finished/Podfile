@@ -1,0 +1,13 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '9.0'
+# Uncomment this line if you're using Swift
+use_frameworks!
+
+target 'RxNetworkDemo' do
+	pod 'Alamofire', '~> 3.4'
+	pod 'RxSwift',    '~> 2.0'
+	pod 'RxCocoa',    '~> 2.0'
+	pod 'RxDataSources', '~> 0.7'
+	pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+end
+
