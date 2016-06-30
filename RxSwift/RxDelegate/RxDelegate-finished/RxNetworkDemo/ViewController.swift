@@ -14,7 +14,7 @@ import Alamofire
 import SwiftyJSON
 
 class ViewController
-    : UIViewController, UITableViewDelegate {
+    : UIViewController {
 
     @IBOutlet weak var repositoryName: UITextField!
     @IBOutlet weak var searchResult: UITableView!
@@ -26,11 +26,17 @@ class ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.searchResult.delegate = self
-        self.searchResult.rxDidSelectRowAtIndexPath.subscribeNext {
-            print("From delegate proxy")
-            $0.deselectRowAtIndexPath($1, animated: true)
+//        self.searchResult.delegate = self
+        
+        self.searchResult.rx_itemSelected.subscribeNext {
+            [unowned self] in
+                self.searchResult.deselectRowAtIndexPath($0, animated: true)
         }.addDisposableTo(self.bag)
+        
+//        self.searchResult.rxDidSelectRowAtIndexPath.subscribeNext {
+//            print("From delegate proxy")
+//            $0.deselectRowAtIndexPath($1, animated: true)
+//        }.addDisposableTo(self.bag)
         
         self.dataSource.configureCell = { (_, tv, indexPath, element) in
             let cell =
@@ -55,10 +61,12 @@ class ViewController
             .subscribe(onNext: { repositoryModelArray in
                     // Create UITableView here later
                     self.searchResult.dataSource = nil
+                
                     Observable.just(self.createGithubSectionModel(repositoryModelArray))
                         .bindTo(self.searchResult.rx_itemsWithDataSource(self.dataSource))
                         .addDisposableTo(self.bag)
-                    
+                    self.dataSource.canEditRowAtIndexPath = { (_, _) in false }
+                
                 }, onError: { error in
                     self.displayErrorAlert(error as NSError)
                 }).addDisposableTo(self.bag)

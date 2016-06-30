@@ -14,8 +14,6 @@ class MyRxTableViewDelegateProxy
 :DelegateProxy
 ,UITableViewDelegate
 ,DelegateProxyType {
-    // Methods in DelegateProxyType
-    
     // How to get the native delegate object
     static func currentDelegateFor(object: AnyObject) -> AnyObject? {
         let tableView = object as! UITableView
